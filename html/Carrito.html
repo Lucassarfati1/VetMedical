@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Dogitos</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="../css/Dogitos.css">
+        
+    </head>
+<body>
+<div class="wrapper">
+    <aside>
+        <header>
+            <h1 class="logo">VetMedical</h1>
+        </header>
+        <nav>
+            <ul>           
+                <li>
+                    <a class="boton-menu boton-volver" href="./Productos.html"><i class="bi bi-arrow-return-left"></i>Seguir comprando</a>
+                </li>
+                <li>
+                    <a  href="./carrito.html" class="boton-carrito boton-menu  active"><i class="bi bi-cart-fill"></i>Carrito</a>
+                </li>
+            </ul>
+        </nav>
+            <footer>
+                <p class="texto-footer">© 2023 Dogitos</p>
+            </footer>
+    </aside>
+
+<main>
+    <h2 class="titulo-principal">Carrito</h2>
+        <div  class="contenedor-carrito">
+            <p class="carrito-vacio" id="carrito-vacio"><i class="bi bi-emoji-frown"></i>Tu carrito esta vacio</p>
+            <div id="carrito-productos" class="carrito-productos disabled">
+                
+                
+            </div>
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                        <div class="carrito-acciones-izquierda">
+                            <button class="carrito-acciones-vaciar">Vaciar carrito</button>
+                        </div>
+                        <div class="carrito-acciones-derecha">
+                            <div class="carrito-acciones-total">
+                                <p>Total:<p id="total"></p></p>     
+                                
+                            </div>
+                            <button id="carrito-acciones" class="carrito-acciones-comprar">Comprar ahora</button>
+                        </div>
+                        
+                </div>
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra.<i class="bi bi-emoji-smile"></i></p>
+        </div>
+    </main>
+</div>
+    
+</body>
+<script src="../js/carrito.js"></script>
+</html>
